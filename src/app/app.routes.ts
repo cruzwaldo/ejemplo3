@@ -13,9 +13,9 @@ export const routes: Routes = [
     {path:'', component : Home},
     {path:'producs', component : Producs},
     {path:'contac', component : Contac},
-    {path:'register', component : Register}
-    {path:'login', component : Login}
-    {path:'cart', component : Cart}
+    {path:'register', component : Register},
+    {path:'login', component : Login},
+    {path:'cart', component : Cart},
 
 
     {path:'dashboard', component : Dashboard}
