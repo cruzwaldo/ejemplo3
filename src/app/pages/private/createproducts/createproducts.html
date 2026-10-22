@@ -1,0 +1,18 @@
+<form (ngSubmit)="createproducts()">
+    <h1>createproducts</h1>
+
+    <div class="field">
+        <label for="referencia"> referencia: </label>
+        <input type="referencia" id="referencia" placeholder="Codigo producto" name="codigo"[(ngModel)]="referencia">
+    </div>
+
+    <div class="field">
+        <label for="nombre">nombre:</label>
+        <input type="nombre" id="nombre" placeholder="Nombre" name="nombre"[(ngModel)]="nombre">
+    </div>
+
+    <button type="submit">crear</button>
+
+
+</form>
+

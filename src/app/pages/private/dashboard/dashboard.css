@@ -1,0 +1,31 @@
+/* Barra de navegación superior */
+div {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0 1.5rem;
+}
+
+div ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+div li a {
+  display: block;
+  padding: 1rem 0.5rem;
+  color: #374151;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+div li a:hover {
+  color: #2563eb;
+  border-bottom-color: #2563eb;
+}

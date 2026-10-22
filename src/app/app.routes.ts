@@ -7,6 +7,9 @@ import { Dashboard } from './pages/private/dashboard/dashboard';
 import { Register } from './pages/public/register/register';
 import { Login } from './pages/public/login/login';
 import { Cart } from './pages/public/cart/cart';
+import { Productdetail } from './pages/public/productdetail/productdetail';
+import { Createproducts } from './pages/private/createproducts/createproducts';
+import { Alluser } from './pages/private/alluser/alluser';
 
 export const routes: Routes = [
 
@@ -16,6 +19,11 @@ export const routes: Routes = [
     {path:'register', component : Register},
     {path:'login', component : Login},
     {path:'cart', component : Cart},
+    {path:'product/:id', component : Productdetail},
+    {path:'crearproducto', component : Createproducts},
+    {path:'allUser', component : Alluser},
+
+
 
 
     {path:'dashboard', component : Dashboard}

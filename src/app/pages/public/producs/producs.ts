@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { ProductServices } from './../../../services/product-services';
+import { Component, inject } from '@angular/core';
 
 @Component({
   selector: 'app-producs',
@@ -6,4 +7,24 @@ import { Component } from '@angular/core';
   templateUrl: './producs.html',
   styleUrl: './producs.css',
 })
-export class Producs {}
+export class Producs {
+
+ProductServices =inject(ProductServices);
+
+ngOnInit(){
+  this.ProductServices.getproducts().subscribe({
+    next:( res : any )=> {console.log(res.data)
+      
+
+    },
+
+    error: (err)=> {
+      console.log(err)
+    }
+  })
+    
+
+  }
+}
+
+
